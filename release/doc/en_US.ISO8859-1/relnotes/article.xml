@@ -110,6 +110,24 @@
       improvements.</para>
   </sect1>
 
+  <sect1 xml:id="important">
+    <title>Important Notes</title>
+
+    <para>This section lists important information for those upgrading
+      from prior &os; releases.</para>
+
+    <sect2 xml:id="important-notes">
+      <title>User-facing Changes</title>
+
+      <para>As of <literal>r303719</literal>,
+	<application>OpenSSH</application> <literal>DSA</literal> key
+	generation has been disabled by default.  It is important to
+	update <application>OpenSSH</application> keys prior to
+	upgrading.  Additionally, <literal>Protocol 1</literal>
+	support has been removed.</para>
+    </sect2>
+  </sect1>
+
   <sect1 xml:id="upgrade">
     <title>Upgrading from Previous Releases of &os;</title>
 
@@ -724,6 +742,13 @@
 	updated to honor entries within <filename
 	  class="directory">/etc/rc.conf.d/</filename>.</para>
 
+      <para revision="298515">Two new subcommands have been added to
+	the &man.rc.8; subsystem.  <command>describe</command> shows
+	an rc script's description, and
+	<command>extracommands</command> shows any non-standard
+	commands present in an rc script, like
+	<command>reload</command>, <command>configtest</command>, or
+	<command>keygen</command>.</para>
     </sect2>
 
     <sect2 xml:id="userland-periodic">
