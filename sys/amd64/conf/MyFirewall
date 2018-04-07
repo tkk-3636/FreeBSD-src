@@ -104,11 +104,7 @@ device		pflog
 device		pfsync
 
 
-device		hifn		# Hifn 7951, 7781, etc.
-options		HIFN_DEBUG	# enable debugging support: hw.hifn.debug
-options		HIFN_RNDTEST	# enable rndtest support
-device		ubsec		# Broadcom 5501, 5601, 58xx
-		# safe -- SafeNet crypto accelerator
+
 device		padlock
 
 device		speaker
