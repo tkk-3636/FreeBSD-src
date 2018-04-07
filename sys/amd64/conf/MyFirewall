@@ -1,0 +1,122 @@
+include		GENERIC
+
+nooptions	KDB_TRACE
+options		DDB
+
+ident		NSW_USMABD
+
+nooptions	MAC		# TrustedBSD MAC Framework
+nooptions	COMPAT_FREEBSD4	# Compatible with FreeBSD4
+nooptions	COMPAT_FREEBSD5	# Compatible with FreeBSD5
+nooptions	COMPAT_FREEBSD6	# Compatible with FreeBSD6
+nooptions	COMPAT_FREEBSD7	# Compatible with FreeBSD7
+
+options		GEOM_MIRROR
+options		GEOM_UZIP
+options		GEOM_ELI
+options		GEOM_BDE
+
+options		TMPFS
+options		UNIONFS
+options		NULLFS
+options		PPS_SYNC
+
+
+
+# Pseudo devices.
+#device		pty		# Pseudo-ttys (telnet etc)
+
+# USB support
+nooptions	USB_DEBUG	# enable debug msgs
+
+
+device		uhid		# "Human Interface Devices"
+
+# FireWire support
+device		firewire	# FireWire bus code
+device		sbp		# SCSI over FireWire (Requires scbus and da)
+
+# pfsense addons
+
+
+device		if_bridge
+
+device		vte
+
+# IP/IPFW
+options		IPFIREWALL_DEFAULT_TO_ACCEPT
+options		IPFIREWALL_VERBOSE
+options		IPSTEALTH
+
+# Netgraph
+options		NETGRAPH		#netgraph(4) system
+options		NETGRAPH_VLAN
+options		NETGRAPH_L2TP
+options		NETGRAPH_BPF
+options		NETGRAPH_ETHER
+options		NETGRAPH_IFACE
+options		NETGRAPH_EIFACE
+options		NETGRAPH_PPP
+options		NETGRAPH_PPPOE
+options		NETGRAPH_PPTPGRE
+options		NETGRAPH_RFC1490
+options		NETGRAPH_SOCKET
+options		NETGRAPH_TTY
+options		NETGRAPH_MPPC_ENCRYPTION
+options		NETGRAPH_UI
+options		NETGRAPH_VJC
+options		NETGRAPH_KSOCKET
+options		NETGRAPH_LMI
+options		NETGRAPH_ONE2MANY
+options		NETGRAPH_BRIDGE
+options		NETGRAPH_CISCO
+options		NETGRAPH_ECHO
+options		NETGRAPH_ASYNC
+options		NETGRAPH_FRAME_RELAY
+options		NETGRAPH_HOLE
+options		NETGRAPH_TEE
+options		NETGRAPH_TCPMSS
+options		NETGRAPH_PIPE
+options		NETGRAPH_CAR
+options		NETGRAPH_DEFLATE
+options		NETGRAPH_PRED1
+
+# IPSEC
+options		TCP_SIGNATURE
+device		enc
+
+# ALTQ
+options		ALTQ
+options		ALTQ_CBQ
+options		ALTQ_RED
+options		ALTQ_RIO
+options		ALTQ_HFSC
+options		ALTQ_PRIQ
+options		ALTQ_FAIRQ
+options		ALTQ_NOPCC
+options		ALTQ_CODEL
+
+# Squid related settings
+
+
+device		pf
+device		pflog
+device		pfsync
+
+
+
+device		padlock
+
+device		speaker
+
+options		MROUTING
+
+# Additional cards
+
+device    igb
+# Default serial speed
+options		CONSPEED=115200
+
+# Enable gpioapu
+#device		gpioapu
+#device		gpiorcc
