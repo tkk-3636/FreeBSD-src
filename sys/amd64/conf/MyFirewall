@@ -113,7 +113,7 @@ options		MROUTING
 
 # Additional cards
 
-device    igb
+#device    igb
 # Default serial speed
 options		CONSPEED=115200
 
