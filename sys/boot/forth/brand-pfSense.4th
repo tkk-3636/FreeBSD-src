@@ -34,13 +34,13 @@
 
 : brand ( x y -- ) \ "pfSense" [wide] logo in B/W (7 rows x 42 columns)
 
-	s"          __ ____                          " brand+
-	s"   _ __  / _/ ___|  ___ _ __  ___  ___     " brand+
-	s"  | '_ \| |_\___ \ / _ \ '_ \/ __|/ _ \    " brand+
-	s"  | |_) |  _|___) |  __/ | | \__ \  __/    " brand+
-	s"  | .__/|_| |____/ \___|_| |_|___/\___|    " brand+
-	s"  |_|                                      " brand+
-	s"                                           " brand+
+	s" | \       | 	    ---     |       |        " brand+
+	s" |  \	     |	   /	    |	    |	     " brand+
+	s" | 	\    |	  /	    |	    |	     " brand+
+	s" | 	 \   |	  \______   |	    |        " brand+
+	s" | 	  \  |	      	 /  |	/\  |	     " brand+
+	s" |       \ |          /   |  /  \ |        " brand+
+	s" |        \|      ___/    |/     \|        " brand+
 
 	2drop
 ;
