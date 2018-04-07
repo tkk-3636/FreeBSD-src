@@ -39,12 +39,12 @@
 	s"                               " logo+
 	s"                 ______        " logo+
 	s"                /      \       " logo+
-	s"          _____/    f   \      " logo+
+	s"          _____/    s   \      " logo+
 	s"         /     \        /      " logo+
-	s"        /   p   \______/  Sense" logo+
+	s"        /   n   \______/  All  " logo+
 	s"        \       /      \       " logo+
 	s"         \_____/        \      " logo+
-	s"               \        /      " logo+
+	s"               \    w   /      " logo+
 	s"                \______/       " logo+
 	s"                               " logo+
 	s"                               " logo+
