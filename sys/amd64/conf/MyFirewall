@@ -83,7 +83,7 @@ options		NETGRAPH_PRED1
 
 # IPSEC
 options IPSEC
-options IPSEC_SUPPORT
+#options IPSEC_SUPPORT
 device crypto
 options		TCP_SIGNATURE
 device		enc
