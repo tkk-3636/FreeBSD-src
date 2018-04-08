@@ -105,7 +105,7 @@ device		pfsync
 
 
 
-device		padlock
+#device		padlock
 
 device		speaker
 
